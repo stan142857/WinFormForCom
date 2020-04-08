@@ -1,0 +1,10 @@
+C:\Users\yuanlei\source\repos\mingrisoft(3)_test_v.0.0.1\bin\Debug\mingrisoft(3)_test_v.0.0.1.exe.config
+C:\Users\yuanlei\source\repos\mingrisoft(3)_test_v.0.0.1\bin\Debug\mingrisoft(3)_test_v.0.0.1.exe
+C:\Users\yuanlei\source\repos\mingrisoft(3)_test_v.0.0.1\bin\Debug\mingrisoft(3)_test_v.0.0.1.pdb
+C:\Users\yuanlei\source\repos\mingrisoft(3)_test_v.0.0.1\obj\Debug\mingrisoft(3)_test_v.0.0.1.csprojAssemblyReference.cache
+C:\Users\yuanlei\source\repos\mingrisoft(3)_test_v.0.0.1\obj\Debug\mingrisoft_3__test_v._0._0._1.Properties.Resources.resources
+C:\Users\yuanlei\source\repos\mingrisoft(3)_test_v.0.0.1\obj\Debug\mingrisoft_3__test_v._0._0._1.readcsv.resources
+C:\Users\yuanlei\source\repos\mingrisoft(3)_test_v.0.0.1\obj\Debug\mingrisoft(3)_test_v.0.0.1.csproj.GenerateResource.cache
+C:\Users\yuanlei\source\repos\mingrisoft(3)_test_v.0.0.1\obj\Debug\mingrisoft(3)_test_v.0.0.1.csproj.CoreCompileInputs.cache
+C:\Users\yuanlei\source\repos\mingrisoft(3)_test_v.0.0.1\obj\Debug\mingrisoft(3)_test_v.0.0.1.exe
+C:\Users\yuanlei\source\repos\mingrisoft(3)_test_v.0.0.1\obj\Debug\mingrisoft(3)_test_v.0.0.1.pdb
