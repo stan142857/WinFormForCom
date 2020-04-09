@@ -63,12 +63,9 @@ namespace mingrisoft_3__test_v._0._0._1
                     DataSet ds = new DataSet();
                     sda.Fill(ds);
                     
-
                     this.dataGridView1.DataSource = ds.Tables[0];
                     this.dataGridView1.AutoGenerateColumns = false;
                     #endregion
-                    
-
                 }
             }
         }
