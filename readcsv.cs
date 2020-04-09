@@ -113,7 +113,7 @@ namespace mingrisoft_3__test_v._0._0._1
             shr.ExeNonQuery(str);
             shr.closeConn();
         }
-
+        #region csv大容量存库
         private void BtnTest_Click(object sender, EventArgs e)
         {
             CSVOpeHelper csv = new CSVOpeHelper();
@@ -124,6 +124,6 @@ namespace mingrisoft_3__test_v._0._0._1
             CSVOpeHelper.TableValuedToDB(dt);
             SW.Stop();
         }
-        
+        #endregion
     }
 }
