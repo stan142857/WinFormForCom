@@ -118,13 +118,11 @@ namespace mingrisoft_3__test_v._0._0._1
         {
             CSVOpeHelper csv = new CSVOpeHelper();
             Stopwatch SW = new Stopwatch();
-            string filPath = textBox1.Text;
+            string filPath = @"C:\Users\yuanlei\Desktop\get.csv";
             DataTable dt = CSVOpeHelper.OpenCSV(filPath);
             SW.Start();
             CSVOpeHelper.TableValuedToDB(dt);
             SW.Stop();
-            BtnTest.Text = filPath.ToString();
-
         }
         
     }

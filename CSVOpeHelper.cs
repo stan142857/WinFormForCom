@@ -39,13 +39,14 @@ namespace mingrisoft_3__test_v._0._0._1
         {
             sqlHelper shr = new sqlHelper();
             const string TSqlStatement =
-             "insert into Basis (Id,description)" +
+             "insert into Basis(Id,description)" +
              " SELECT nc.Id,nc.description" +
              " FROM @NewBulkTestTvp AS nc";
             SqlCommand cmd = new SqlCommand(TSqlStatement, shr.GetCon());
             SqlParameter catParam = cmd.Parameters.AddWithValue("@NewBulkTestTvp", dt);
             catParam.SqlDbType = SqlDbType.Structured;
-            //表值参数的名字叫BulkUdt，在上面的建立测试环境的SQL中有。  
+            //表值参数的名字叫Basis，如下  
+            //CREATE TYPE Basis AS TABLE (Id int,description varchar)
             catParam.TypeName = "Basis";
             try
             {
@@ -55,7 +56,7 @@ namespace mingrisoft_3__test_v._0._0._1
                     cmd.ExecuteNonQuery();
                 }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 throw ex;
             }
@@ -63,6 +64,7 @@ namespace mingrisoft_3__test_v._0._0._1
             {
                 shr.closeConn();
             }
+            
         }
         public static DataTable OpenCSV(string filePath)
         {

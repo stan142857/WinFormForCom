@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Readcsv));
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("ID");
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("描述");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("ID");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("描述");
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.checkBox22 = new System.Windows.Forms.CheckBox();
@@ -209,6 +209,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(137, 21);
             this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "C:\\Users\\yuanlei\\Desktop\\todo.csv";
             // 
             // button1
             // 
@@ -534,8 +535,8 @@
             // listView1
             // 
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem9,
-            listViewItem10});
+            listViewItem13,
+            listViewItem14});
             this.listView1.Location = new System.Drawing.Point(178, 28);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(190, 278);
