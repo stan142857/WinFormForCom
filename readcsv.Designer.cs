@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Readcsv));
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("ID");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("描述");
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.checkBox22 = new System.Windows.Forms.CheckBox();
@@ -73,6 +75,8 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BtnInit = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.BtnTest = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -275,7 +279,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.27273F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1104, 117);
             this.tableLayoutPanel1.TabIndex = 3;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel1_Paint);
             // 
             // button8
             // 
@@ -428,7 +431,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(4, 28);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(241, 278);
+            this.dataGridView1.Size = new System.Drawing.Size(173, 278);
             this.dataGridView1.TabIndex = 4;
             // 
             // label9
@@ -451,10 +454,10 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView2.Location = new System.Drawing.Point(309, 28);
+            this.dataGridView2.Location = new System.Drawing.Point(374, 28);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(462, 272);
+            this.dataGridView2.Size = new System.Drawing.Size(439, 272);
             this.dataGridView2.TabIndex = 5;
             // 
             // Column2
@@ -506,6 +509,8 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.BtnTest);
+            this.panel2.Controls.Add(this.listView1);
             this.panel2.Controls.Add(this.BtnInit);
             this.panel2.Controls.Add(this.dataGridView3);
             this.panel2.Controls.Add(this.dataGridView2);
@@ -525,6 +530,27 @@
             this.BtnInit.Text = "初始化数据库";
             this.BtnInit.UseVisualStyleBackColor = true;
             this.BtnInit.Click += new System.EventHandler(this.BtnInit_Click);
+            // 
+            // listView1
+            // 
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem9,
+            listViewItem10});
+            this.listView1.Location = new System.Drawing.Point(178, 28);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(190, 278);
+            this.listView1.TabIndex = 9;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // BtnTest
+            // 
+            this.BtnTest.Location = new System.Drawing.Point(180, 3);
+            this.BtnTest.Name = "BtnTest";
+            this.BtnTest.Size = new System.Drawing.Size(111, 23);
+            this.BtnTest.TabIndex = 10;
+            this.BtnTest.Text = "测试数据库BULK";
+            this.BtnTest.UseVisualStyleBackColor = true;
+            this.BtnTest.Click += new System.EventHandler(this.BtnTest_Click);
             // 
             // Readcsv
             // 
@@ -600,5 +626,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button BtnInit;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button BtnTest;
     }
 }

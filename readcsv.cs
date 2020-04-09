@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -43,6 +44,15 @@ namespace mingrisoft_3__test_v._0._0._1
                     int index3 = this.dataGridView3.Rows.Add();
                     this.dataGridView3.Rows[index3].Cells[0].Value = str[0];
                     this.dataGridView3.Rows[index3].Cells[1].Value = str[1];
+
+                    #region listview 的使用
+                    /*
+                    listView1.Items[0].Text = str[0];
+                    listView1.Items[1].Text = str[1];
+                    */
+
+                    #endregion
+
                     #region 录入数据库
                     SqlParameter[] sp =
                     {
@@ -94,18 +104,27 @@ namespace mingrisoft_3__test_v._0._0._1
                 checkBox21.Enabled = true;
             }
         }
-
-        private void TableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
         //初始化数据库
         private void BtnInit_Click(object sender, EventArgs e)
         {
             sqlHelper shr = new sqlHelper();
-            string str = "delete from Basis where Id>1";
+            string str = "delete from Basis where Id>0";
             shr.ExeNonQuery(str);
             shr.closeConn();
         }
+
+        private void BtnTest_Click(object sender, EventArgs e)
+        {
+            CSVOpeHelper csv = new CSVOpeHelper();
+            Stopwatch SW = new Stopwatch();
+            string filPath = textBox1.Text;
+            DataTable dt = CSVOpeHelper.OpenCSV(filPath);
+            SW.Start();
+            CSVOpeHelper.TableValuedToDB(dt);
+            SW.Stop();
+
+        }
+        
     }
 }
