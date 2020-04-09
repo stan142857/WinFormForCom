@@ -102,5 +102,13 @@ namespace mingrisoft_3__test_v._0._0._1
         {
 
         }
+        //初始化数据库
+        private void BtnInit_Click(object sender, EventArgs e)
+        {
+            sqlHelper shr = new sqlHelper();
+            string str = "delete from Basis where Id>1";
+            shr.ExeNonQuery(str);
+            shr.closeConn();
+        }
     }
 }

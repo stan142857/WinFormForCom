@@ -64,14 +64,15 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnInit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -138,7 +139,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(1012, 93);
+            this.label8.Location = new System.Drawing.Point(1011, 93);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 12);
             this.label8.TabIndex = 8;
@@ -147,7 +148,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(911, 93);
+            this.label7.Location = new System.Drawing.Point(910, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 12);
             this.label7.TabIndex = 7;
@@ -156,7 +157,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(800, 93);
+            this.label6.Location = new System.Drawing.Point(799, 93);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 12);
             this.label6.TabIndex = 6;
@@ -165,7 +166,6 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Right;
             this.label5.Location = new System.Drawing.Point(147, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 12);
@@ -246,7 +246,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel1.Controls.Add(this.button8, 7, 1);
             this.tableLayoutPanel1.Controls.Add(this.button6, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 2);
@@ -281,7 +281,7 @@
             // 
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.Location = new System.Drawing.Point(1012, 37);
+            this.button8.Location = new System.Drawing.Point(1011, 37);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(74, 52);
             this.button8.TabIndex = 19;
@@ -293,7 +293,7 @@
             // 
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(800, 37);
+            this.button6.Location = new System.Drawing.Point(799, 37);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(70, 52);
             this.button6.TabIndex = 19;
@@ -303,19 +303,24 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Controls.Add(this.button3);
             this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.Controls.Add(this.button5);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(440, 37);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(353, 52);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(352, 52);
             this.flowLayoutPanel1.TabIndex = 13;
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.Location = new System.Drawing.Point(3, 3);
@@ -328,9 +333,12 @@
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(84, 3);
+            this.button3.Location = new System.Drawing.Point(91, 3);
+            this.button3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 52);
             this.button3.TabIndex = 16;
@@ -342,7 +350,8 @@
             // 
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(165, 3);
+            this.button4.Location = new System.Drawing.Point(179, 3);
+            this.button4.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 52);
             this.button4.TabIndex = 17;
@@ -352,9 +361,12 @@
             // 
             // button5
             // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(246, 3);
+            this.button5.Location = new System.Drawing.Point(267, 3);
+            this.button5.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 52);
             this.button5.TabIndex = 18;
@@ -366,7 +378,7 @@
             // 
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(911, 37);
+            this.button7.Location = new System.Drawing.Point(910, 37);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(67, 52);
             this.button7.TabIndex = 20;
@@ -376,11 +388,13 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(440, 96);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 17);
+            this.panel1.Size = new System.Drawing.Size(352, 17);
             this.panel1.TabIndex = 21;
             // 
             // mingrisoftDataSet
@@ -411,7 +425,7 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(4, 28);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(241, 278);
@@ -420,7 +434,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(16, 28);
+            this.label9.Location = new System.Drawing.Point(4, 13);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 12);
             this.label9.TabIndex = 7;
@@ -437,31 +451,31 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView2.Location = new System.Drawing.Point(312, 3);
+            this.dataGridView2.Location = new System.Drawing.Point(309, 28);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 23;
             this.dataGridView2.Size = new System.Drawing.Size(462, 272);
             this.dataGridView2.TabIndex = 5;
             // 
-            // Column5
+            // Column2
             // 
-            this.Column5.HeaderText = "检查概况";
-            this.Column5.Name = "Column5";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "名称";
-            this.Column4.Name = "Column4";
+            this.Column2.HeaderText = "确认通过";
+            this.Column2.Name = "Column2";
             // 
             // Column3
             // 
             this.Column3.HeaderText = "行政代码";
             this.Column3.Name = "Column3";
             // 
-            // Column2
+            // Column4
             // 
-            this.Column2.HeaderText = "确认通过";
-            this.Column2.Name = "Column2";
+            this.Column4.HeaderText = "名称";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "检查概况";
+            this.Column5.Name = "Column5";
             // 
             // dataGridView3
             // 
@@ -471,27 +485,28 @@
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column6});
-            this.dataGridView3.Location = new System.Drawing.Point(835, 3);
+            this.dataGridView3.Location = new System.Drawing.Point(835, 28);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowTemplate.Height = 23;
             this.dataGridView3.Size = new System.Drawing.Size(257, 272);
             this.dataGridView3.TabIndex = 6;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "描述";
-            this.Column6.Name = "Column6";
             // 
             // Column1
             // 
             this.Column1.HeaderText = "ID";
             this.Column1.Name = "Column1";
             // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "描述";
+            this.Column6.Name = "Column6";
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.BtnInit);
             this.panel2.Controls.Add(this.dataGridView3);
             this.panel2.Controls.Add(this.dataGridView2);
             this.panel2.Controls.Add(this.label9);
@@ -500,6 +515,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1104, 334);
             this.panel2.TabIndex = 9;
+            // 
+            // BtnInit
+            // 
+            this.BtnInit.Location = new System.Drawing.Point(93, 4);
+            this.BtnInit.Name = "BtnInit";
+            this.BtnInit.Size = new System.Drawing.Size(75, 23);
+            this.BtnInit.TabIndex = 8;
+            this.BtnInit.Text = "初始化数据库";
+            this.BtnInit.UseVisualStyleBackColor = true;
+            this.BtnInit.Click += new System.EventHandler(this.BtnInit_Click);
             // 
             // Readcsv
             // 
@@ -574,5 +599,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button BtnInit;
     }
 }
