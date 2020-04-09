@@ -123,6 +123,7 @@ namespace mingrisoft_3__test_v._0._0._1
             SW.Start();
             CSVOpeHelper.TableValuedToDB(dt);
             SW.Stop();
+            BtnTest.Text = filPath.ToString();
 
         }
         
