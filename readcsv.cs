@@ -14,19 +14,19 @@ using System.Windows.Forms;
 
 namespace mingrisoft_3__test_v._0._0._1
 {
-    public partial class readcsv : Form
+    public partial class Readcsv : Form
     {
-        public readcsv()
+        public Readcsv()
         {
             InitializeComponent();
         }
 
-        private void readcsv_Load(object sender, EventArgs e)
+        private void Readcsv_Load(object sender, EventArgs e)
         {
             this.basisTableAdapter.Fill(this.mingrisoftDataSet.Basis);
 
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             sqlHelper shr = new sqlHelper();
             if(openFileDialog1.ShowDialog()==DialogResult.OK)
@@ -73,7 +73,7 @@ namespace mingrisoft_3__test_v._0._0._1
             }
         }
 
-        private void checkBox12_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox12_CheckedChanged(object sender, EventArgs e)
         {
             if(checkBox12.Checked == true)
             {
@@ -85,7 +85,7 @@ namespace mingrisoft_3__test_v._0._0._1
             }
         }
 
-        private void checkBox22_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox22_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox22.Checked == true)
             {
@@ -98,7 +98,7 @@ namespace mingrisoft_3__test_v._0._0._1
             }
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void TableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

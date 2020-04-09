@@ -16,7 +16,7 @@ namespace mingrisoft_3__test_v._0._0._1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new readcsv());
+            Application.Run(new Readcsv());
         }
     }
 }

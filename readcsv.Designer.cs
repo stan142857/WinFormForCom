@@ -1,6 +1,6 @@
 ﻿namespace mingrisoft_3__test_v._0._0._1
 {
-    partial class readcsv
+    partial class Readcsv
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(readcsv));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Readcsv));
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.checkBox22 = new System.Windows.Forms.CheckBox();
@@ -100,7 +100,7 @@
             this.checkBox22.TabIndex = 12;
             this.checkBox22.Text = "分作物法";
             this.checkBox22.UseVisualStyleBackColor = true;
-            this.checkBox22.CheckedChanged += new System.EventHandler(this.checkBox22_CheckedChanged);
+            this.checkBox22.CheckedChanged += new System.EventHandler(this.CheckBox22_CheckedChanged);
             // 
             // checkBox21
             // 
@@ -121,7 +121,7 @@
             this.checkBox12.TabIndex = 10;
             this.checkBox12.Text = "县级";
             this.checkBox12.UseVisualStyleBackColor = true;
-            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
+            this.checkBox12.CheckedChanged += new System.EventHandler(this.CheckBox12_CheckedChanged);
             // 
             // checkBox11
             // 
@@ -211,7 +211,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "选择成果所在文件夹";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // comboBox1
             // 
@@ -271,7 +271,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.27273F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1100, 117);
             this.tableLayoutPanel1.TabIndex = 3;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel1_Paint);
             // 
             // button8
             // 
@@ -486,7 +486,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "readcsv";
             this.Text = "readcsv";
-            this.Load += new System.EventHandler(this.readcsv_Load);
+            this.Load += new System.EventHandler(this.Readcsv_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
